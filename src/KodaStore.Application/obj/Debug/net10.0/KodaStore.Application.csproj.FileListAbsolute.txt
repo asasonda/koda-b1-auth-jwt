@@ -1,0 +1,31 @@
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.deps.json
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.pdb
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Domain.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Domain.pdb
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.csproj.AssemblyReference.cache
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.AssemblyInfoInputs.cache
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.AssemblyInfo.cs
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.csproj.CoreCompileInputs.cache
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.sourcelink.json
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStor.DB5CF48F.Up2Date
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\refint\KodaStore.Application.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.pdb
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 5\DOTNET2_Day 3\src\KodaStore.Application\obj\Debug\net10.0\ref\KodaStore.Application.dll
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.deps.json
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.dll
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Application.pdb
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Domain.dll
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\bin\Debug\net10.0\KodaStore.Domain.pdb
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.csproj.AssemblyReference.cache
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.AssemblyInfoInputs.cache
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.AssemblyInfo.cs
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.csproj.CoreCompileInputs.cache
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStor.DB5CF48F.Up2Date
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.dll
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\refint\KodaStore.Application.dll
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\KodaStore.Application.pdb
+D:\koda\C#\koda-b1-week7day1\src\KodaStore.Application\obj\Debug\net10.0\ref\KodaStore.Application.dll
