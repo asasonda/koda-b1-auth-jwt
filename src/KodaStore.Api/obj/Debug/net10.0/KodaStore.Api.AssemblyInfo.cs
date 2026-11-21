@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4f2dc777-7d29-4f91-ace7-45db82b20bf0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("KodaStore.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76a28c7e9b89b0dd1d891729741fb460210c8551")]
 [assembly: System.Reflection.AssemblyProductAttribute("KodaStore.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KodaStore.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

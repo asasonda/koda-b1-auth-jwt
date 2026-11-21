@@ -1,6 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
 using KodaStore.Application.DTOs.Auth;
 using KodaStore.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace KodaStore.Api.Controllers;
 
@@ -9,10 +12,12 @@ namespace KodaStore.Api.Controllers;
 public sealed class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly IJwtTokenService _jwtToken;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, IJwtTokenService jwtToken)
     {
         _authService = authService;
+        _jwtToken = jwtToken;
     }
 
     [HttpPost("register")]
@@ -46,7 +51,8 @@ public sealed class AuthController : ControllerBase
         return BadRequest(problem);
     }
 
-    [HttpPost]
+    [HttpPost("login")]
+    [EnableRateLimiting("LoginLimiter")]
     [ProducesResponseType(typeof(LoginResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
 
@@ -62,9 +68,41 @@ public sealed class AuthController : ControllerBase
                Detail = "Email atau password salah" 
             });
         }
-        var response = new LoginResponse("Akun berhasil diverifikasi", result.User);
+
+        var user = result.User!;
+        var issueToken = _jwtToken.IssuedAccessToken(user);
+
+        var response = new LoginResponse(
+            Message: "Akun berhasil diverifikasi",
+            User: user,
+            AccessToken: issueToken.AccessToken,
+            TokenType: "Bearer",
+            ExpiresAtUtc:  issueToken.ExpiredAtUtc
+        );
+        
+        return Ok(response);
+    }
+
+    [Authorize]
+    [HttpGet("me")]
+    [ProducesResponseType(typeof(CurrentUserResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status401Unauthorized)]
+    public ActionResult<CurrentUserResponse> Me()
+    {
+        var subject = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+        if(!Guid.TryParse(subject, out var userId))
+        {
+            return Unauthorized(new ProblemDetails
+            {
+                Status = StatusCodes.Status401Unauthorized,
+                Title = "Invalid user identity"
+            });
+        }
+
+        var email = User.FindFirst(JwtRegisteredClaimNames.Email)?.Value ?? string.Empty;
+        var response = new CurrentUserResponse(userId, email);
 
         return Ok(response);
-
     }
 }

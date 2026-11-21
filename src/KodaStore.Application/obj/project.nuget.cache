@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pysL4fMpOsA=",
+  "dgSpecHash": "TzSA1/hl71c=",
   "success": true,
-  "projectFilePath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj",
+  "projectFilePath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

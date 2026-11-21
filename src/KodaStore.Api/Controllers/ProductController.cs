@@ -15,13 +15,9 @@ public sealed class ProductController : ControllerBase
         _service = service;
     }
 
-    // GET /api/v1/products
     [HttpGet]
-    [ProducesResponseType(
-        typeof(IReadOnlyList<ProductResponse>),
-        StatusCodes.Status200OK)]
-    public async Task<ActionResult<IReadOnlyList<ProductResponse>>> GetAll(
-        CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(IReadOnlyList<ProductResponse>), StatusCodes.Status200OK)]
+    public async Task<ActionResult<IReadOnlyList<ProductResponse>>> GetAll(CancellationToken cancellationToken)
     {
         var products = await _service.GetAllAsync(
             cancellationToken);
@@ -29,17 +25,10 @@ public sealed class ProductController : ControllerBase
         return Ok(products);
     }
 
-    // GET /api/v1/products/PR001
     [HttpGet("{productCode}")]
-    [ProducesResponseType(
-        typeof(ProductResponse),
-        StatusCodes.Status200OK)]
-    [ProducesResponseType(
-        typeof(ProblemDetails),
-        StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ProductResponse>> GetByCode(
-        [FromRoute] string productCode,
-        CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(ProductResponse),StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ProductResponse>> GetByCode([FromRoute] string productCode,CancellationToken cancellationToken)
     {
         var product = await _service.GetByCodeAsync(
             productCode,
@@ -55,20 +44,12 @@ public sealed class ProductController : ControllerBase
         return Ok(product);
     }
 
-    // POST /api/v1/products
+
     [HttpPost]
-    [ProducesResponseType(
-        typeof(ProductResponse),
-        StatusCodes.Status201Created)]
-    [ProducesResponseType(
-        typeof(ValidationProblemDetails),
-        StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(
-        typeof(ProblemDetails),
-        StatusCodes.Status409Conflict)]
-    public async Task<ActionResult<ProductResponse>> Create(
-        [FromBody] ProductRequest request,
-        CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(ProductResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ValidationProblemDetails),StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status409Conflict)]
+    public async Task<ActionResult<ProductResponse>> Create([FromBody] ProductRequest request, CancellationToken cancellationToken)
     {
         try
         {
@@ -97,21 +78,11 @@ public sealed class ProductController : ControllerBase
         }
     }
 
-    // PUT /api/v1/products/PR001
     [HttpPut("{productCode}")]
-    [ProducesResponseType(
-        typeof(ProductResponse),
-        StatusCodes.Status200OK)]
-    [ProducesResponseType(
-        typeof(ValidationProblemDetails),
-        StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(
-        typeof(ProblemDetails),
-        StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ProductResponse>> Update(
-        [FromRoute] string productCode,
-        [FromBody] UpdateProductRequest request,
-        CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(ProductResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ProductResponse>> Update([FromRoute] string productCode,[FromBody] UpdateProductRequest request, CancellationToken cancellationToken)
     {
         try
         {
@@ -138,16 +109,11 @@ public sealed class ProductController : ControllerBase
         }
     }
 
-    // DELETE /api/v1/products/PR001
+
     [HttpDelete("{productCode}")]
-    [ProducesResponseType(
-        StatusCodes.Status204NoContent)]
-    [ProducesResponseType(
-        typeof(ProblemDetails),
-        StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> Delete(
-        [FromRoute] string productCode,
-        CancellationToken cancellationToken)
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Delete([FromRoute] string productCode, CancellationToken cancellationToken)
     {
         var deleted = await _service.DeleteAsync(
             productCode,
@@ -159,7 +125,6 @@ public sealed class ProductController : ControllerBase
                 statusCode: StatusCodes.Status404NotFound,
                 title: "Product not found");
         }
-
         return NoContent();
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Api\\KodaStore.Api.csproj": {}
+    "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Api\\KodaStore.Api.csproj": {}
   },
   "projects": {
-    "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Api\\KodaStore.Api.csproj": {
+    "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Api\\KodaStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Api\\KodaStore.Api.csproj",
+        "projectUniqueName": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Api\\KodaStore.Api.csproj",
         "projectName": "KodaStore.Api",
-        "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Api\\KodaStore.Api.csproj",
+        "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Api\\KodaStore.Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Api\\obj\\",
+        "outputPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -27,11 +27,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
-                "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj"
+              "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
+                "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj"
               },
-              "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj": {
-                "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj"
+              "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj": {
+                "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj"
               }
             }
           }
@@ -53,6 +53,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.14, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.12, )"
@@ -509,14 +513,14 @@
         }
       }
     },
-    "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
+    "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj",
+        "projectUniqueName": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj",
         "projectName": "KodaStore.Application",
-        "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj",
+        "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\obj\\",
+        "outputPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -532,8 +536,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
-                "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj"
+              "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
+                "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj"
               }
             }
           }
@@ -848,14 +852,14 @@
         }
       }
     },
-    "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
+    "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj",
+        "projectUniqueName": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj",
         "projectName": "KodaStore.Domain",
-        "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj",
+        "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\obj\\",
+        "outputPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1183,14 +1187,14 @@
         }
       }
     },
-    "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj": {
+    "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj",
+        "projectUniqueName": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj",
         "projectName": "KodaStore.Infrastructure",
-        "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj",
+        "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\KodaStore.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Infrastructure\\obj\\",
+        "outputPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1206,11 +1210,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
-                "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Application\\KodaStore.Application.csproj"
+              "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj": {
+                "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Application\\KodaStore.Application.csproj"
               },
-              "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
-                "projectPath": "D:\\koda\\C#\\koda-b1-week7day1\\src\\KodaStore.Domain\\KodaStore.Domain.csproj"
+              "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj": {
+                "projectPath": "D:\\koda\\NetCore\\koda-b1-backend2\\src\\KodaStore.Domain\\KodaStore.Domain.csproj"
               }
             }
           }
@@ -1245,6 +1249,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[10.0.14, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.23.0, )"
             }
           },
           "imports": [

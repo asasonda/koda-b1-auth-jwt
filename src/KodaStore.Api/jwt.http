@@ -1,0 +1,10 @@
+@base = http://localhost:5231
+
+### get
+POST  {{base}}/api/v1/auth/login
+Accept: application/json
+
+{
+    "email": "hello@gmail.com",
+    "password": "Hello123@@"
+}

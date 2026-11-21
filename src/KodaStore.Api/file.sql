@@ -20,3 +20,9 @@ WHERE i.object_id = OBJECT_ID(N'dbo.Product')
     AND i.name is NOT NULL
 ORDER BY i.name;
 GO
+
+drop DATABASE eccomercedb
+
+create DATABASE ecommercedb
+
+select * from AspNetUsers
